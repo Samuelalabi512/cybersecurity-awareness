@@ -259,7 +259,46 @@
 
     </div>
 </section>
+<section id="quiz">
+    <h2>Test Your Cybersecurity Knowledge</h2>
+    <p>Answer these questions to test how safe you are online.</p>
 
+    <div class="card">
+        <form id="quizForm">
+
+            <p><strong>1. What should you do when you receive a suspicious email?</strong></p>
+            <label><input type="radio" name="q1" value="a"> Click the link immediately</label><br>
+            <label><input type="radio" name="q1" value="b"> Verify the sender first</label><br><br>
+
+            <p><strong>2. Which password is strongest?</strong></p>
+            <label><input type="radio" name="q2" value="a"> 123456</label><br>
+            <label><input type="radio" name="q2" value="b"> password</label><br>
+            <label><input type="radio" name="q2" value="c"> T9#mP2@kL8!</label><br><br>
+
+            <p><strong>3. What should you do with an unknown link?</strong></p>
+            <label><input type="radio" name="q3" value="a"> Open it immediately</label><br>
+            <label><input type="radio" name="q3" value="b"> Check whether it is trustworthy</label><br><br>
+
+            <button type="button" class="button" onclick="checkQuiz()">Submit Answers</button>
+
+        </form>
+
+        <h3 id="result"></h3>
+    </div>
+</section>
+
+<script>
+function checkQuiz() {
+    let score = 0;
+
+    if (document.querySelector('input[name="q1"]:checked')?.value === "b") score++;
+    if (document.querySelector('input[name="q2"]:checked')?.value === "c") score++;
+    if (document.querySelector('input[name="q3"]:checked')?.value === "b") score++;
+
+    document.getElementById("result").innerHTML =
+        "Your score: " + score + "/3. Keep learning and stay safe online!";
+}
+</script>
 <section id="contact" class="contact">
     <h2>Let's Work Together</h2>
 

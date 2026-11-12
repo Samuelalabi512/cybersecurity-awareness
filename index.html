@@ -1,52 +1,282 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Cybersecurity Awareness</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CyberSafe Digital Solutions | Stay Safe Online</title>
+
     <style>
-        body {
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
             font-family: Arial, sans-serif;
-            background: #eef2f7;
-            text-align: center;
-            padding: 50px;
         }
 
-        .container {
-            background: white;
-            padding: 30px;
-            border-radius: 12px;
-            max-width: 500px;
+        body {
+            background: #f4f7fb;
+            color: #17243b;
+            line-height: 1.6;
+        }
+
+        header {
+            background: #071b35;
+            color: white;
+            padding: 20px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .logo {
+            font-size: 23px;
+            font-weight: bold;
+            color: #35c6e8;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+            font-size: 14px;
+        }
+
+        nav a:hover {
+            color: #35c6e8;
+        }
+
+        .hero {
+            background: linear-gradient(120deg, #071b35, #123d68);
+            color: white;
+            text-align: center;
+            padding: 100px 20px;
+        }
+
+        .hero h1 {
+            font-size: 42px;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            max-width: 650px;
+            margin: auto;
+            font-size: 18px;
+            color: #dce8f5;
+        }
+
+        .button {
+            display: inline-block;
+            margin-top: 30px;
+            background: #35c6e8;
+            color: #071b35;
+            padding: 14px 28px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        section {
+            padding: 65px 8%;
+            text-align: center;
+        }
+
+        section h2 {
+            font-size: 30px;
+            margin-bottom: 20px;
+            color: #102d50;
+        }
+
+        .intro {
+            max-width: 750px;
             margin: auto;
         }
 
-        h1 {
-            color: #174ea6;
+        .services {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 22px;
+            margin-top: 35px;
         }
 
-        button {
-            background: #174ea6;
+        .card {
+            background: white;
+            padding: 30px 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.07);
+        }
+
+        .card h3 {
+            color: #087eaa;
+            margin-bottom: 12px;
+        }
+
+        .card p {
+            color: #526176;
+        }
+
+        .audience {
+            background: #e8f1fa;
+        }
+
+        .contact {
+            background: #071b35;
             color: white;
-            padding: 12px 25px;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
+        }
+
+        .contact h2 {
+            color: white;
+        }
+
+        footer {
+            background: #041225;
+            color: #cbd5e1;
+            text-align: center;
+            padding: 20px;
+            font-size: 14px;
+        }
+
+        @media(max-width: 600px) {
+            header {
+                text-align: center;
+                justify-content: center;
+                gap: 15px;
+            }
+
+            nav a {
+                margin: 8px;
+                display: inline-block;
+            }
+
+            .hero h1 {
+                font-size: 30px;
+            }
         }
     </style>
 </head>
+
 <body>
-    <div class="container">
-        <h1>Cybersecurity Awareness</h1>
-        <h3>Learn to Recognise Phishing Attacks</h3>
 
-        <p>
-            Phishing is an online attack where criminals
-            impersonate trusted organisations to trick people.
-        </p>
+<header>
+    <div class="logo">CyberSafe Digital Solutions</div>
 
-        <p>Always check suspicious links before clicking.</p>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
 
-        <button onclick="alert('Training successful! Always verify links before clicking.')">
-            Start Training
-        </button>
+<div class="hero" id="home">
+    <h1>Building a Safer Digital World</h1>
+
+    <p>
+        We help individuals, schools and businesses understand
+        cybersecurity and develop safer online habits through
+        practical awareness education.
+    </p>
+
+    <a href="#services" class="button">Explore Our Services</a>
+</div>
+
+<section id="about">
+    <h2>About CyberSafe</h2>
+
+    <p class="intro">
+        CyberSafe Digital Solutions is focused on promoting
+        cybersecurity awareness and digital safety education.
+        Our goal is to help people recognise online threats,
+        protect their information and make smarter decisions
+        when using the internet.
+    </p>
+</section>
+
+<section id="services">
+    <h2>What We Offer</h2>
+
+    <div class="services">
+
+        <div class="card">
+            <h3>Cybersecurity Awareness</h3>
+            <p>
+                Educational programmes that teach people how
+                to recognise and avoid common online threats.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Phishing Awareness</h3>
+            <p>
+                Learn how to identify suspicious emails,
+                fake websites and dangerous links.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Website Development</h3>
+            <p>
+                Simple educational websites for schools,
+                organisations and small businesses.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Digital Safety Training</h3>
+            <p>
+                Practical lessons on password security,
+                online privacy and account protection.
+            </p>
+        </div>
+
     </div>
+</section>
+
+<section class="audience">
+    <h2>Who We Help</h2>
+
+    <div class="services">
+
+        <div class="card">
+            <h3>Schools</h3>
+            <p>Helping students and teachers develop safer digital habits.</p>
+        </div>
+
+        <div class="card">
+            <h3>Small Businesses</h3>
+            <p>Helping employees understand everyday cybersecurity risks.</p>
+        </div>
+
+        <div class="card">
+            <h3>NGOs</h3>
+            <p>Promoting digital safety awareness in communities.</p>
+        </div>
+
+        <div class="card">
+            <h3>Training Organisations</h3>
+            <p>Providing educational resources and cybersecurity lessons.</p>
+        </div>
+
+    </div>
+</section>
+
+<section id="contact" class="contact">
+    <h2>Let's Work Together</h2>
+
+    <p>
+        Interested in cybersecurity awareness training
+        or an educational website for your organisation?
+    </p>
+
+    <a href="mailto:YOUR_EMAIL_HERE" class="button">
+        Contact Us
+    </a>
+</section>
+
+<footer>
+    <p>&copy; 2026 CyberSafe Digital Solutions. All Rights Reserved.</p>
+    <p>Building a Safer Digital World.</p>
+</footer>
+
 </body>
 </html>
